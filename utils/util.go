@@ -1,0 +1,104 @@
+package utils
+
+import (
+	"crypto/md5"
+	"crypto/sha1"
+	"encoding/hex"
+	"hash"
+	"io"
+	"os"
+	"os/exec"
+	"path/filepath"
+	"time"
+)
+
+type Sha1Stream struct {
+	_sha1 hash.Hash
+}
+
+func (obj *Sha1Stream) Update(data []byte) {
+	if obj._sha1 == nil {
+		obj._sha1 = sha1.New()
+	}
+	obj._sha1.Write(data)
+}
+
+func (obj *Sha1Stream) Sum() string {
+	return hex.EncodeToString(obj._sha1.Sum([]byte("")))
+}
+
+func Sha1(data []byte) string {
+	_sha1 := sha1.New()
+	_sha1.Write(data)
+	return hex.EncodeToString(_sha1.Sum([]byte("")))
+}
+
+func FileSha1(file *os.File) string {
+	_sha1 := sha1.New()
+	io.Copy(_sha1, file)
+	return hex.EncodeToString(_sha1.Sum(nil))
+}
+
+func MD5(data []byte) string {
+	_md5 := md5.New()
+	_md5.Write(data)
+	return hex.EncodeToString(_md5.Sum([]byte("")))
+}
+
+func FileMD5(file *os.File) string {
+	_md5 := md5.New()
+	io.Copy(_md5, file)
+	return hex.EncodeToString(_md5.Sum(nil))
+}
+
+func PathExists(path string) (bool, error) {
+	_, err := os.Stat(path)
+	if err == nil {
+		return true, nil
+	}
+	if os.IsNotExist(err) {
+		return false, nil
+	}
+	return false, err
+}
+
+func GetFileSize(filename string) int64 {
+	var result int64
+	filepath.Walk(filename, func(path string, f os.FileInfo, err error) error {
+		result = f.Size()
+		return nil
+	})
+	return result
+}
+
+func GetAppDir() string {
+	appDir, err := os.Getwd()
+	if err != nil {
+		file, _ := exec.LookPath(os.Args[0])
+		applicationPath, _ := filepath.Abs(file)
+		appDir, _ = filepath.Split(applicationPath)
+	}
+	return appDir
+}
+
+func IsTimeStr(str string) bool {
+	timeLayout := "2006-01-02 15:04:05"                        //转化所需模板
+	loc, _ := time.LoadLocation("Local")                       //重要：获取时区
+	theTime, err := time.ParseInLocation(timeLayout, str, loc) //使用模板在对应时区转化为time.time类型
+	if err != nil {
+		return false
+	}
+	if theTime.Unix() > 0 {
+		return true
+	}
+	return false
+}
+
+//时间格式转换
+func DateToDateTime(date string) string {
+	timeTemplate := "2006-01-02T15:04:05+08:00" //常规类型
+	toTemplate := "2006-01-02 15:04:05"
+	stamp, _ := time.ParseInLocation(timeTemplate, date, time.Local)
+	return time.Unix(stamp.Unix(), 0).Format(toTemplate)
+
+}
