@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="70853fc2-8e04-46e0-a624-269088972ad1" name="默认更改列表" comment="">
+    <list default="true" id="70853fc2-8e04-46e0-a624-269088972ad1" name="默认更改列表" comment="默认更改列表">
+      <change beforePath="$PROJECT_DIR$/.idea/MyCloudDisk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyCloudDisk.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/gw/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/gw/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/proto/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/proto/user.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/util.go" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="MyCloudDisk" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -21,23 +44,31 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="D:\Go" />
+  <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bw7OdFj1zCjgSBh5DjNtGJ6w2R" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/rpc/gw" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -55,19 +86,7 @@
       <recent name="D:\GoWorkSpace\src\MyCloudDisk\modeltools\conf" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Go Build.go build main.go (2)">
+  <component name="RunManager" selected="Go Build.go build main.go">
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="MyCloudDisk" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -116,16 +135,16 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build transferServer.go" />
         <item itemvalue="Go Build.go build main.go (2)" />
         <item itemvalue="Go Build.go build main.go (1)" />
-        <item itemvalue="Go Build.go build transferServer.go" />
-        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Test.TestUploadFile in MyCloudDisk/repository" />
       </list>
     </recent_temporary>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.ini" />
@@ -140,9 +159,74 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="默认更改列表" />
+    <option name="LAST_COMMIT_MESSAGE" value="默认更改列表" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+    <environment>
+      <map>
+        <entry key="GOPROXY" value="https://goproxy.io" />
+      </map>
+    </environment>
     <proxy>https://goproxy.io</proxy>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="531" y="138" key="#HTTP代理" timestamp="1594541741576">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="531" y="138" key="#HTTP代理/0.0.1440.900@0.0.1440.900" timestamp="1594541741576" />
+    <state x="613" y="320" key="#通知" timestamp="1594531898001">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="613" y="320" key="#通知/0.0.1440.900@0.0.1440.900" timestamp="1594531898001" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1594648516425">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594648516425" />
+    <state width="1398" height="209" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1594477052668" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1594648516421">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1594648516421" />
+    <state width="1398" height="209" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1594477052666" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1594648516420">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1594648516420" />
+    <state width="1398" height="209" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1594477052665" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1594648516423">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1594648516423" />
+    <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1594477052667" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1594556930840">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594556930840" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1594556930838">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1594556930838" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1594556930837">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1594556930837" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1594556930839">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1594556930839" />
+    <state x="478" y="138" key="RollbackChangesDialog" timestamp="1594459087139">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state x="478" y="138" key="RollbackChangesDialog/0.23.1440.811@0.23.1440.811" timestamp="1594459087139" />
+    <state x="221" y="49" key="SettingsEditor" timestamp="1594542374129">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="49" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1594542374129" />
+    <state x="221" y="67" key="SettingsEditor/0.23.1440.811@0.23.1440.811" timestamp="1594476712880" />
   </component>
 </project>
