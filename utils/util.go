@@ -114,8 +114,8 @@ func DateToDateTime(date string) string {
 //	//}
 //
 //	mailConn := map[string]string{
-//		"user": "850838205@qq.com",
-//		"pass": "hxaybppybgisbbae",
+//		"user": "",
+//		"pass": "",
 //		"host": "smtp.qq.com",
 //		"port": "25",
 //	}
